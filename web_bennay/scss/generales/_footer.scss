@@ -1,0 +1,25 @@
+#local {
+    background: burlywood;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+       
+}
+#newsletter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#wrapper{
+    padding: 80px;
+}
+
+
+#pago{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

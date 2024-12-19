@@ -1,0 +1,29 @@
+
+@media (max-width:576px){
+    #banner{
+        width: 100%;
+    }
+    .mapa{
+        display: none;
+    }
+  
+}
+
+@media (min-width:768px){
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    #section-contacto {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    #wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+  
+}
