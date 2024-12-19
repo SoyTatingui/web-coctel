@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Venturier</title>
+    <link rel="stylesheet" href="public/estructura.css">
+    <link rel="stylesheet" href="public/checkout.css">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="public/Imagenes/Logo.png" alt="Venturier Logo" class="logo"></a>
+            </div>
+            <nav class="nav">
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="#">PROMOCIONES</a>
+                <a href="carrito.html">CARRITO</a>
+                <a href="#">CONTACTO</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="checkout-container">
+        <div class="checkout-content">
+            <form id="checkout-form">
+                <h1>Datos para la compra</h1>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección de Envío</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div id="map" class="map-container"></div>
+            </form>
+            <aside class="checkout-sidebar">
+                <h2>Resumen del Carrito</h2>
+                <div id="resumen-carrito"></div>
+                <div class="total-contenedor">
+                    <strong>Total:</strong>
+                    <span id="total">$0</span>
+                </div>
+                <button type="submit" id="finalizar-compra-btn">Finalizar Compra</button>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="links-preguntas">
+            <h4>FAQ - Preguntas frecuentes</h4>
+            <h4>Quienes somos</h4>
+            <h4>Politica de arrepentimiento</h4>
+            <h4>Abrir una franquicia</h4>
+            <h4>Consulta</h4>
+        </div>
+        <div class="redes-sociales">
+            <img src="public/Imagenes/footer-logo-facebook.png" alt="Facebook">
+            <img src="public/Imagenes/footer-logo-instagram.png" alt="Instagram">
+            <img src="public/Imagenes/footer-logo-twitter.png" alt="Twitter">
+            <img src="public/Imagenes/footer-logo-whatsapp.png" alt="WhatsApp">
+            <img src="public/Imagenes/footer-logo-linkedin.png" alt="Linkedin">
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venturier</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="public/estructura.css">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+
+    <div id="loading-screen" class="loading-screen">
+        Cargando...
+    </div>
+    <div id="main-content" style="display: none;">
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="public/Imagenes/Logo.png" alt="Venturier Logo" class="logo"></a>
+            </div>
+            <div class="items_nav">
+                <nav class="nav">
+                    <a href="productos.html">PRODUCTOS</a>
+                    <a href="#">PROMOCIONES</a>
+                    <a href="carrito.html">CARRITO</a>
+                    <a href="#">CONTACTO</a>
+                </nav>
+                <div class="lenguaje">
+                    <div class="language-selector">
+                        <img src="public/Imagenes/Flag_of_Argentina.png" alt="Argentina" id="current-flag">
+                        <img src="public/Imagenes/dropdown_icono.png" alt="Dropdown Icono" class="dropbtn">
+                        <div class="dropdown-content">
+                            <a href="#" id="lang-english"><img src="public/Imagenes/Flag_of_USA.png" alt="USA"> English</a>
+                            <a href="#" id="lang-spanish"><img src="public/Imagenes/Flag_of_Argentina.png" alt="Argentina"> Español</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil_icono">
+                    <div class="perfil_icono_in"><a href=""><img src="public/Imagenes/perfil_icono.png" alt="Icono de perfil" class="perfil_icono_img"></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="public/Imagenes/slider-venturier-1.jpg" alt="Image 1">
+            <img src="public/Imagenes/slider-venturier-2.jpg" alt="Image 2">
+            <img src="public/Imagenes/slider-venturier-3.jpg" alt="Image 3">
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+        <div class="carousel-dots"></div>
+    </div>
+
+    <section class="most-searched">
+        <h2 class="section-title animated">Lo más buscado</h2>
+        <div class="items">
+            <div class="item">
+                <a href="productos.html?etiquetas=RopaSuperior"><img src="public/Imagenes/s1-abrigos.png" alt="Abrigos"></a>
+                <p>ABRIGOS</p>
+            </div>
+            <div class="item">
+                <a href="productos.html?etiquetas=Camping"><img src="public/Imagenes/s1-camping.png" alt="Camping"></a>
+                <p>CAMPING</p>
+            </div>
+            <div class="item">
+                <a href="productos.html?etiquetas=Viaje"><img src="public/Imagenes/s1-viaje.png" alt="Viaje"></a>
+                <p>VIAJE</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="what-you-need">
+        <h2 class="section-title animated">Lo que necesitas</h2>
+        <div class="items">
+            <div class="item image-container">
+                <a href="productos.html?etiquetas=Abrigo">
+                    <img src="public/Imagenes/s2-pilotos-y-buzos.png" alt="Item 1">
+                </a>
+            </div>
+            <div class="item image-container">
+                <a href="productos.html?etiquetas=Bolsos">
+                    <img src="public/Imagenes/s2-mochilas-y-riñoneras.png" alt="Item 2">
+                </a>
+            </div>
+            <div class="item image-container">
+                <a href="productos.html?etiquetas=Botas">
+                    <img src="public/Imagenes/s2-botas-y-zapatillas.png" alt="Item 3">
+                </a>
+            </div>
+            <div class="item image-container">
+                <a href="productos.html?etiquetas=RopaInferior">
+                    <img src="public/Imagenes/s2-pantalones-y-shorts.png" alt="Item 4">
+                </a>
+            </div>
+            <div class="item image-container">
+                <a href="productos.html?etiquetas=Equipo">
+                    <img src="public/Imagenes/s2-carpas-y-accesorios.png" alt="Item 5">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gender-age">
+        <div class="item">
+            <a href="productos.html?etiquetas=Mujer"><img src="public/Imagenes/s3-mujer.png" alt="Mujer"></a>
+        </div>
+        <div class="item">
+            <a href="productos.html?etiquetas=Hombre"><img src="public/Imagenes/s3-hombre.png" alt="Hombre"></a>
+        </div>
+        <div class="item">
+            <a href="productos.html?etiquetas=Niños"><img src="public/Imagenes/s3-nenes.png" alt="Niños"></a>
+        </div>
+    </section>
+
+    <section class="activities">
+        <div class="activities-container">
+        <h2 class="section-title animated">Todas las actividades</h2>
+            <div class="items">
+                <a href="productos.html" class="item">
+                    <img src="public/Imagenes/s4-montaña.png" alt="Montaña">
+                    <p>MONTAÑA</p>
+                </a>
+                <a href="productos.html" class="item">
+                    <img src="public/Imagenes/s4-trekking.png" alt="Trekking">
+                    <p>TREKKING</p>
+                </a>
+                <a href="productos.html" class="item">
+                    <img src="public/Imagenes/s4-nieve.png" alt="Nieve">
+                    <p>NIEVE</p>
+                </a>
+                <a href="productos.html" class="item">
+                    <img src="public/Imagenes/s4-deporte.png" alt="Deportes">
+                    <p>DEPORTES</p>
+                </a>
+                <a href="productos.html" class="item">
+                    <img src="public/Imagenes/s4-gimnasia.png" alt="Gimnasia">
+                    <p>GIMNASIA</p>
+                </a>
+                <a href="productos.html" class="item">
+                    <img src="public/Imagenes/s4-urbano.png" alt="Urbano">
+                    <p>URBANO</p>
+                </a>
+            </div>
+        </div>
+    </section>    
+
+    <section class="payments-types">
+        <div class="payments-container">
+        <h2 class="section-title animated">Metodos de pago</h2>
+        <div class="container-payments">
+            <div class="payments">
+                <img src="public/Imagenes/pago-tarjeta.png" alt="Pago con tarjeta">
+                <div class="payments-info">
+                    <h3>Paga con tarjeta</h3>
+                    <a href="">Mas informacion</a>
+                </div>
+            </div>
+            <div class="payments">
+                <div class="payments-img"></div>
+                <img src="public/Imagenes/pago-efectivo.png" alt="Efectivo">
+                <div class="payments-info">
+                  <h3>Efectivo</h3>
+                   <a href="">Mas informacion</a>
+                </div>
+            </div>
+            <div class="payments">
+                <img src="public/Imagenes/pago-mercado-pago.png" alt="Mercado pago">
+                <div class="payments-info">
+                    <h3>Mercado pago</h3>
+                    <a href="">Mas informacion</a>
+                </div>
+            </div>
+            <div class="payments">
+                <img src="public/Imagenes/pago-paypal.png" alt="Paypal">
+                <div class="payments-info">
+                    <h3>Paypal</h3>
+                    <a href="">Mas informacion</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="our-history">
+        <h2 class="section-title animated">Nuestra historia</h2>
+        <div class="history">
+            <div class="history-content">
+                <div class="history-info info1">
+                    <h3 class="section-title animated">El inicio</h3>
+                    <p>Todo comenzo en 1995 cuando David Guzman y su pareja Julia Martinez decidieron ir de vacaciones a la patagonia.
+                        Durante el viaje y sus excursiones notaron que su ropa y equipo no eran del todo comodas y adaptadas a aquel clima imponente, 
+                        ante esta problematica decidieron crear su propia marca de ropa para nieve.
+                    </p>
+                </div>
+                <div class="history-img">
+                    <img src="public/Imagenes/quienes-somos-foto-1.png" alt="Quienes somos 1">
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-content">
+                <div class="history-img">
+                    <img src="public/Imagenes/quienes-somos-foto-2.png" alt="Quienes somos 2">
+                </div>
+                <div class="history-info info2">
+                    <h3 class="section-title animated">Hoy en dia</h3>
+                    <p>La empresa crecio y se volvio todo un exito, pasando rapidamente a ser reconocida a nivel nacional y tener varias sucursales.
+                        Entonces Juan Lopez un reconocido empresario ofrecio comprar una gran parte de las acciones de la empresa volviendose CEO, 
+                        hoy los fundadores trabajan en un nuevo proyecto de venta de mochilas para excursiones, mientras que Juan administra la empresa.
+                        Hoy venturier es conocida como una gran empresa en latinoamerica y un ejemplo de como emprender.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-center">
+            <div class="founders">
+                <div class="founder-person">
+                    <img src="public/Imagenes/quienes-somos-integrante-1.png" alt="">
+                    <h4>David Guzman</h4>
+                    <p>Fundador</p>
+                </div>
+                <div class="founder-person">
+                    <img src="public/Imagenes/quienes-somos-integrante-2.png" alt="">
+                    <h4>Julia Martinez</h4>
+                    <p>Cofundadora</p>
+                </div>
+                <div class="founder-person">
+                    <img src="public/Imagenes/quienes-somos-integrante-3.png" alt="">
+                    <h4>Juan Lopez</h4>
+                    <p>CEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Reviews de Clientes -->
+    <section class="reviews">
+    <div class="reviews-carousel">
+        <div class="carousel-container">
+            <h2>Reseñas de los consumidores</h2>
+        <div class="carousel-wrapper" id="customer-review-wrapper">
+            <div class="review-item">
+                <img src="public/Imagenes/reseñas-cliente-1.png" alt="Primer cliente">
+                <p>"Excelente servicio, productos de gran calidad y entregas rápidas. 100% recomendado."</p>
+                <h4>- Juan Pérez</h4>
+            </div>
+            <div class="review-item">
+                <img src="public/Imagenes/reseñas-cliente-2.png" alt="Segundo cliente">
+                <p>"Me encanta la variedad de productos y la atención al cliente. Siempre vuelvo a comprar aquí."</p>
+                <h4>- María García</h4>
+            </div>
+            <div class="review-item">
+                <img src="public/Imagenes/reseñas-cliente-3.png" alt="Tercer cliente">
+                <p>"Los mejores precios del mercado y una experiencia de compra fácil y rápida."</p>
+                <h4>- Blanca Flores</h4>
+            </div>
+        </div>
+    
+
+        </div>
+    </div>
+    </section>
+  
+
+
+    <section class="news">
+        <div class="news-container">
+            <h2 class="section-title animated">Ultimas novedades</h2>
+            <div class="news-items-container">
+                <div class="news-item">
+                    <img src="public/Imagenes/s5-noticia-1.png" alt="">
+                    <div class="news-info">
+                        <h4 class="section-title animated">Venturier patrocina escalada anual al Fitz Roy</h4>
+                        <p>Hace 4 años empezamos con la escalada anual al monte Fitz Roy, donde invitamos a los mejores escaladores 
+                            de la region a desafiarse a ellos mismos escalando el indomable Fitz Roy</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="public/Imagenes/s5-noticia-2.png" alt="">
+                    <div class="news-info">
+                        <h4 class="section-title animated">Conseguimos donar mas de 150 prendas este año a los necesitados.</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi fugiat illum optio nihil nisi a 
+                            obcaecati sequi, ducimus magnam dolor repellendus ea nostrum unde repellat accusamus similique.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="public/Imagenes/s5-noticia-3.png" alt="">
+                    <div class="news-info">
+                        <h4 class="section-title animated">Abrimos 3 nuevas sucursales en Buenos Aires</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi fugiat illum optio nihil nisi a 
+                            obcaecati sequi, ducimus magnam dolor repellendus ea nostrum unde repellat accusamus similique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="links-preguntas">
+            <h4>FAQ - Preguntas frecuentes</h4>
+            <h4>Quienes somos</h4>
+            <h4>Politica de arrepentimiento</h4>
+            <h4>Abrir una franquicia</h4>
+            <h4>Consulta</h4>
+        </div>
+        <div class="redes-sociales">
+            <img src="public/Imagenes/footer-logo-facebook.png" alt="Facebook">
+            <img src="public/Imagenes/footer-logo-instagram.png" alt="Instagram">
+            <img src="public/Imagenes/footer-logo-twitter.png" alt="Twitter">
+            <img src="public/Imagenes/footer-logo-whatsapp.png" alt="WhatsApp">
+            <img src="public/Imagenes/footer-logo-linkedin.png" alt="Linkedin">
+        </div>
+    </footer>
+    
+    </div>
+    <script src="costumer-review.js"></script>
+    <script src="main.js"></script>
+    <script src="carousel.js"></script>
+    <script src="language-selector.js"></script>
+    <script src="most-searched-section.js"></script>
+    <script src="productos.js"></script>
+</body>
+</html>

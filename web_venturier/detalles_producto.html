@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venturier</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="public/estructura.css">
+    <link rel="stylesheet" href="public/detalles_producto.css">
+</head>
+<body>
+    <!--
+    <div id="loading-screen" class="loading-screen">
+        Cargando...
+    </div>
+    <div id="main-content" style="display: none;">-->
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="public/Imagenes/Logo.png" alt="Venturier Logo" class="logo"></a>
+            </div>
+            <div class="items_nav">
+                <nav class="nav">
+                    <a href="productos.html">PRODUCTOS</a>
+                    <a href="#">PROMOCIONES</a>
+                    <a href="carrito.html">CARRITO</a>
+                    <a href="#">CONTACTO</a>
+                </nav>
+                <div class="lenguaje">
+                    <div class="language-selector">
+                        <img src="public/Imagenes/Flag_of_Argentina.png" alt="Argentina" id="current-flag">
+                        <img src="public/Imagenes/dropdown_icono.png" alt="Dropdown Icono" class="dropbtn">
+                        <div class="dropdown-content">
+                            <a href="#" id="lang-english"><img src="public/Imagenes/Flag_of_USA.png" alt="USA"> English</a>
+                            <a href="#" id="lang-spanish"><img src="public/Imagenes/Flag_of_Argentina.png" alt="Argentina"> Español</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil_icono">
+                    <div class="perfil_icono_in"><a href=""><img src="public/Imagenes/perfil_icono.png" alt="Icono de perfil" class="perfil_icono_img"></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="producto">
+            <div class="product-image">
+                <img id="imagen-producto" src="" alt="Producto" style="width: 100%;">
+                <div id="descripcion-producto" class="product-description"></div>
+                <div id="etiquetas-producto" class="product-tags"></div>
+            </div>
+            <div class="sidebar">
+                <div class="titulo-pr"><h3 id="nombre-producto"></h3></div>
+                <div id="colores-producto"></div>
+                <p class="talles-pr">Talles: </p>
+                <div id="talles-producto" class="talles">
+                    <button class="boton-talle">MS</button>
+                    <button class="boton-talle">S</button>
+                    <button class="boton-talle">M</button>
+                    <button class="boton-talle">L</button>
+                    <button class="boton-talle">XL</button>
+                    <button class="boton-talle">2XL</button>
+                </div>
+                <div id="precio-producto"></div>
+                <div id="stock-producto"></div>
+                <div id="colores-producto" class="colores"></div>
+                <div id="cantidad-producto">
+                    <button id="decrementar">-</button>
+                    <span id="cantidad">1</span>
+                    <button id="incrementar">+</button>
+                </div>
+                <button id="boton-comprar" class="compra add-to-cart">AÑADIR AL CARRITO</button>
+                <p class="envios-msg">Envios gratis a productos con un precio mayor a $60000</p>
+            </div>
+            <div id="popup" class="popup">
+                <p>Tu producto se ha añadido al carrito ✓</p>
+            </div>    
+        </div>
+            <script>
+                
+            </script>
+        
+        <footer class="footer">
+            <div class="links-preguntas">
+                <h4>FAQ - Preguntas frecuentes</h4>
+                <h4>Quienes somos</h4>
+                <h4>Politica de arrepentimiento</h4>
+                <h4>Abrir una franquicia</h4>
+                <h4>Consulta</h4>
+            </div>
+            <div class="redes-sociales">
+                <img src="public/Imagenes/footer-logo-facebook.png" alt="Facebook">
+                <img src="public/Imagenes/footer-logo-instagram.png" alt="Instagram">
+                <img src="public/Imagenes/footer-logo-twitter.png" alt="Twitter">
+                <img src="public/Imagenes/footer-logo-whatsapp.png" alt="WhatsApp">
+                <img src="public/Imagenes/footer-logo-linkedin.png" alt="Linkedin">
+            </div>
+        </footer>
+    <!--</div>-->
+    <script src="detalle_producto.js"></script>
+    <script src="productos.js"></script>
+    <script src="main.js"></script>
+    <script src="language-selector.js"></script>
+
+</body>
+</html>

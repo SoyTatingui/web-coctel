@@ -1,0 +1,148 @@
+html{
+    background-color: #1f1f1f;
+    overflow-y: scroll;                 
+}
+.productosGaleria {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+ /* Altura completa de la ventana */
+    overflow-y: auto; /* Permitir desplazamiento si el contenido es muy largo */
+    background-color: #f4f4f4;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    display: inline-block; /* Permitir que el border-bottom funcione correctamente */
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Hacer que el h3 sea el contenedor de un pseudo-elemento */
+    margin-bottom: 20px;
+}
+
+.sidebar h3::after {
+    content: ''; /* Crear un pseudo-elemento */
+    position: absolute; /* Posicionar el pseudo-elemento */
+    left: 50%; /* Posicionar en el centro */
+    width: 70%; /* Ocupa la mitad del h3 */
+    border-bottom: 2px solid #A6BF11; /* Color y grosor del subrayado */
+    transform: translateX(-50%); /* Centrar el pseudo-elemento */
+    bottom: 0; /* Alinear al fondo del h3 */
+}
+.titulo-filtro{
+    text-align: center;
+}
+
+.product-gallery {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    background-color: #f4f4f4;
+}
+
+.product-card {
+    width: calc(25% - 20px);
+    max-height:fit-content;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 250px; /* Altura mínima para que las tarjetas no se estiren */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-card:hover {
+    box-shadow: 0px 0px 10px rgb(145, 145, 145);
+    cursor: pointer;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+    
+}
+
+.product-price {
+    color: #A6BF11;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-tags {
+    font-size: 0.8em;
+    color: #777;
+    
+}
+
+#tag-filters {
+    display: flex;
+    flex-direction: column; /* Organizar filtros en columna */
+    gap: 10px; /* Espacio entre filtros */
+    
+}
+
+.filter-item {
+    display: flex; /* Alinear el checkbox y el texto horizontalmente */
+    align-items: center; /* Centrar verticalmente el texto con el checkbox */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el label */
+}
+
+h4{
+    font-weight: 500;
+}
+
+.filter-item label {
+    margin-left: 8px; /* Ajusta este valor según el espacio deseado */
+}
+
+label {
+    text-decoration: none; /* Quita el subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.color-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+    border: 1px solid rgb(160, 160, 160);
+}
+.color-circle:hover {
+    outline: 2px solid #a0a0a0;
+    outline-offset: 2px; 
+}
+
+.product-colors, .color-filters {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+

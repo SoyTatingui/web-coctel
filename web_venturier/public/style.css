@@ -1,0 +1,500 @@
+/* Reseteo de márgenes y padding */
+
+
+/* Carrusel CSS */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto; /* Alto automático en función de las imágenes */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-dots span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fdfdfd;
+    border-radius: 100px;
+    transition: background-color 0.6s ease;
+    border: 1px solid #717171;
+}
+
+.carousel-dots .active {
+    background-color: #717171;
+}
+
+/* Most searched section */
+.most-searched {
+    text-align: center;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Ajusta la distancia entre el texto y el subrayado */
+    left: 15%; /* Ajusta el inicio del subrayado */
+    width: 70%; /* Ancho del subrayado */
+    height: 2px;
+    background-color: #A6BF11; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente el subrayado está oculto */
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out; /* Animación */
+}
+
+.section-title.animated::after {
+    transform: scaleX(1); /* Muestra el subrayado */
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.item {
+    text-align: center;
+    
+}
+
+.item img {
+    width: 300px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+    
+}
+
+.gender-age .item img:hover{
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+
+.most-searched .item img:hover{
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+
+.item p {
+    font-size: 24px;
+    color: #A6BF11;
+}
+
+/* Nueva sección "Lo que necesitas" */
+
+.what-you-need{
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.what-you-need h2{
+    margin-top: 16px;
+}
+
+.what-you-need .items {
+    display: flex;
+    justify-content:center;
+}
+
+.what-you-need .item {
+    text-align: center;
+    position: relative;
+}
+
+.what-you-need .image-container {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.what-you-need .item img {
+    max-width: 100%;
+    display: block;
+}
+.image-container{
+    box-shadow: 0 4px 6px #0000004d;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-height: 260px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.image-container:hover {
+    box-shadow: 0px 0px 10px #A6BF11;
+    transform: scale(0.96);
+}
+
+.what-you-need .image-container:hover::after {
+    opacity: 0.2;
+}
+
+.what-you-need div img{
+    width: 200px;
+}
+
+/* Hombres, mujeres y niños*/
+
+.gender-age{
+    background-color: #A6BF11;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.gender-age div{
+    margin-top: 15px;
+    transform-origin: center;
+}
+
+/* Actividades */
+.activities {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.activities-container{
+    max-width: 1400px;
+}
+.activities a{
+    background-color: #f8f8f8;
+    border-radius: 10%;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.activities h2 {
+    margin-bottom: 20px;
+}
+
+.activities .items {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los items se envuelvan en múltiples filas */
+    justify-content: center; /* Centra los items horizontalmente */
+    gap: 20px; /* Añade espacio entre los items */
+}
+
+.activities .item {
+    flex: 1 1 150px; /* Ajusta el ancho mínimo de los items */
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activities .item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Limita el ancho máximo de las imágenes */
+    margin-bottom: 10px;
+    transition: none;
+}
+
+.activities .item:hover {
+    transform: scale(0.9); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+}
+
+.activities .item p {
+
+    font-size: 22px;
+    color: #A6BF11;
+
+}
+
+/* Payments types section */
+.payments-types {
+    display: flex;
+    justify-content: center;
+}
+.payments-container{
+    text-align: center;
+    padding: 20px;
+    max-width: 1400px;
+}
+.container-payments {
+    background-color: #A6BF11;
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 1000px;
+}
+.payments{
+    display: flex;
+    align-items: center;
+}
+.payments-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+}
+.payments-info h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+.payments-info a{
+    text-decoration: none;
+    color: #717171;
+    transition: color 0.2s ease;
+}
+.payments-info a:hover{
+    color: #fff;   
+    transition: color 0.2s;
+}
+.payments img{
+    max-width: 60px;
+    height: 60px;
+}
+
+/* Our history section */
+
+/* Estilos para la sección "Nuestra historia" */
+.our-history {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.history {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+.history-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
+}
+.history-info, .history-img {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.history-info {
+    flex-direction: column;
+    text-align: justify;
+    flex: 1; 
+    padding: 10px;
+    border: 2px solid #A6BF11; 
+    margin: 20px;
+}
+
+.history-info p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.history-img {
+    flex: 1; 
+    padding: 0 10px; 
+}
+
+.history-img img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+.founder-center{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+.founders{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-around;
+}
+.founder-person h4{
+    color: #A6BF11;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Costumers Reviews*/
+
+/* Estilos del contenedor del carrusel */
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.reviews-carousel {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-image: url('Imagenes/resenas-fondo.png'); /* Añade la ruta de tu imagen aquí */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+}
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.review-item {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.review-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.review-item h4 {
+    font-size: 16px;
+    color: #A6BF11;
+}
+
+.reviews-carousel h2{
+    display: flex;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.review-item img{
+    width: 10%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Botones de navegación */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* -------- News --------------*/
+
+.news{
+    display: flex;
+    justify-content: center;
+}
+.news-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.news-items-container{
+    display: flex;
+    justify-content: center;
+
+}
+.news-item{
+    max-width: 450px;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 5px 10px 5px rgb(145, 145, 145);
+}
+.news-item img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.news-info{
+    padding: 10px;
+}
+.news-info h4{
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.news-info p{
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+

@@ -1,0 +1,137 @@
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.checkout-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px; /* Espacio entre el formulario y el sidebar */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 65%; /* 65% del espacio para el formulario de compra */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #A6BF11;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #8AA40E;
+}
+
+/* Sidebar de resumen del carrito */
+.checkout-sidebar {
+  width: 35%; /* 35% del espacio para el resumen del carrito */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-sidebar h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.producto-resumen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinear nombre y precio en extremos */
+  margin-bottom: 10px;
+}
+
+.producto-resumen img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.producto-resumen span {
+  font-size: 16px;
+  color: #555;
+}
+
+.producto-nombre {
+  flex-grow: 1; /* Tomar el espacio disponible */
+  font-size: 16px;
+  color: #555;
+}
+
+.producto-precio {
+  font-size: 16px;
+  color: #555;
+}
+
+.total-contenedor {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+#total {
+  font-weight: normal;
+  margin-left: auto; /* Mueve el monto a la derecha */
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+

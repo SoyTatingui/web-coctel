@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venturier</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="public/estructura.css">
+    <link rel="stylesheet" href="public/productos.css">
+    <link rel="stylesheet" href="public/carrito.css">
+</head>
+<body>
+<!--
+    <div id="loading-screen" class="loading-screen">
+        Cargando...
+    </div>
+    <div id="main-content" style="display: none;">-->
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="public/Imagenes/Logo.png" alt="Venturier Logo" class="logo"></a>
+            </div>
+            <div class="items_nav">
+                <nav class="nav">
+                    <a href="productos.html">PRODUCTOS</a>
+                    <a href="#">PROMOCIONES</a>
+                    <a href="carrito.html">CARRITO</a>
+                    <a href="#">CONTACTO</a>
+                </nav>
+                <div class="lenguaje">
+                    <div class="language-selector">
+                        <img src="public/Imagenes/Flag_of_Argentina.png" alt="Argentina" id="current-flag">
+                        <img src="public/Imagenes/dropdown_icono.png" alt="Dropdown Icono" class="dropbtn">
+                        <div class="dropdown-content">
+                            <a href="#" id="lang-english"><img src="public/Imagenes/Flag_of_USA.png" alt="USA"> English</a>
+                            <a href="#" id="lang-spanish"><img src="public/Imagenes/Flag_of_Argentina.png" alt="Argentina"> Español</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil_icono">
+                    <div class="perfil_icono_in"><a href=""><img src="public/Imagenes/perfil_icono.png" alt="Icono de perfil" class="perfil_icono_img"></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="carrito">
+        <div class="container">
+            <!-- Sección izquierda: Productos en el carrito -->
+            <div class="productos-carrito" style="width: 70%;">
+                <div id="carrito-vacio" style="display: none;">
+                    <p>No hay productos en el carrito, añadilos acá</p>
+                    <button onclick="window.location.href='productos.html'">Ver Productos</button>
+                </div>
+                <div id="productos-lista"></div>
+            </div>
+    
+            <!-- Sección derecha: Resumen de la compra -->
+            <div class="resumen-compra" style="width: 30%;">
+                <h2 class="resumen-titulo">RESUMEN DE COMPRA</h2>
+                <div id="resumen-precios"></div>
+                <div id="total-compra">
+                    <strong>Total:</strong> $<span id="total-precio">0.00</span>
+                </div>
+                <button id="comprar-btn">COMPRAR</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="links-preguntas">
+            <h4>FAQ - Preguntas frecuentes</h4>
+            <h4>Quienes somos</h4>
+            <h4>Politica de arrepentimiento</h4>
+            <h4>Abrir una franquicia</h4>
+            <h4>Consulta</h4>
+        </div>
+        <div class="redes-sociales">
+            <img src="public/Imagenes/footer-logo-facebook.png" alt="Facebook">
+            <img src="public/Imagenes/footer-logo-instagram.png" alt="Instagram">
+            <img src="public/Imagenes/footer-logo-twitter.png" alt="Twitter">
+            <img src="public/Imagenes/footer-logo-whatsapp.png" alt="WhatsApp">
+            <img src="public/Imagenes/footer-logo-linkedin.png" alt="Linkedin">
+        </div>
+    </footer>
+    
+    </div>
+    <script src="carrito.js"></script>
+    <script src="productos.js"></script>
+    <script src="detalle_producto.js"></script>
+    <script src="main.js"></script>
+    <script src="language-selector.js"></script>
+</body>
+</html>

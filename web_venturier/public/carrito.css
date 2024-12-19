@@ -1,0 +1,114 @@
+.carrito {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1400px;
+    gap: 20px;
+}
+
+.productos-carrito, .resumen-compra {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.producto-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.producto-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.producto-info {
+    flex-grow: 1;
+}
+
+.producto-precio, .producto-eliminar {
+    margin-left: 10px;
+}
+
+#comprar-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #A6BF11;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#comprar-btn:hover {
+    transition: color 0.2s;
+}
+
+.producto-eliminar img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+#carrito-vacio button{
+    padding: 5px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #212121;
+}
+
+.resumen-titulo {
+    margin-bottom: 10px;
+    font-weight: 500;
+    display: inline-block; /* Permitir que el border-bottom funcione correctamente */
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Hacer que el h3 sea el contenedor de un pseudo-elemento */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.resumen-titulo::after {
+    content: ''; /* Crear un pseudo-elemento */
+    position: absolute; /* Posicionar el pseudo-elemento */
+    left: 50%; /* Posicionar en el centro */
+    width: 70%; /* Ocupa la mitad del h3 */
+    border-bottom: 2px solid #A6BF11; /* Color y grosor del subrayado */
+    transform: translateX(-50%); /* Centrar el pseudo-elemento */
+    bottom: 0; /* Alinear al fondo del h3 */
+}
+
+.producto-info h3{
+    color: #A6BF11;
+}
+.producto-eliminar img{
+    transition: transform 0.2s ease;
+}
+.producto-eliminar img:hover{
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+#total-compra{
+    margin-top: 10px;
+    border-top: 2px solid #A6BF11;
+    padding-top: 5px; 
+}
+
+#comprar-btn:disabled {
+    background-color: #A6BF11;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
