@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <title>Coctel</title>
+    <style>
+      body { background-color: rgb(25, 25, 25); }
+      h1 { color: white; margin: 20px 0; }
+      iframe { display: block; margin: 0 auto; max-width: 100%; }
+      .slideshow-container { position: relative; margin: auto; }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 24px;
+        padding: 10px;
+        z-index: 10;
+      }
+      .prev { left: 10px; }
+      .next { right: 10px; }
+      .dot { display: inline-block; height: 10px; width: 10px; margin: 5px; background-color: #bbb; border-radius: 50%; cursor: pointer; }
+      .dot.active { background-color: #717171; }
+      .mySlides {
+      display: none; /* Oculta todos los slides por defecto */
+      }
+      .mySlides:first-child {
+      display: block; /* Muestra solo el primer slide */
+      }
+      
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="d-flex justify-content-center">
+        <nav class="navbar">
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item bg-transparent"><a class="text-white" href="../index.html">Portfolio</a></li>
+                <li class="list-group-item bg-transparent"><a class="text-white" href="../index.html#servicios">Servicios</a></li>
+                <li class="list-group-item bg-transparent">
+                    <a href="../index.html">
+                        <img id="logo" src="../imagenes/general/logo.png" width="200" alt="Logo de Coctel">
+                    </a>
+                </li>
+                <li class="list-group-item bg-transparent"><a class="text-white" href="../index.html#team">Team</a></li>
+                <li class="list-group-item bg-transparent"><a class="text-white" href="../index.html#contactanos">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        
+        <div class="slideshow-container">
+          <h1 class="text-center">ESTALLIDO TRIDIMENSIONAL</h1>
+          <div class="mySlides">
+              <iframe id="player1" width="880" height="495" src="https://www.youtube.com/embed/OTmtUM5cbXQ?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="mySlides">
+              <iframe id="player2" width="880" height="495" src="https://www.youtube.com/embed/JqDZ9unG-J4?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="mySlides">
+            <iframe id="player3" width="880" height="495" src="https://www.youtube.com/embed/0bjv65vjHFc?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="mySlides">
+            <iframe id="player4" width="880" height="495" src="https://www.youtube.com/embed/ffX-MSyvoQU?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="mySlides">
+              <iframe id="player5" width="880" height="495" src="https://www.youtube.com/embed/ULQCm3NNcmY?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <div class="text-center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+</div>
+
+<script>
+let slideIndex = 0;
+let players = [];
+let playerReadyCount = 0; // Contador de jugadores listos
+
+// Cargar YouTube Iframe API
+function loadYouTubeAPI() {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+loadYouTubeAPI();
+
+function onYouTubeIframeAPIReady() {
+    players.push(new YT.Player('player1', { events: { 'onStateChange': onPlayerStateChange, 'onReady': onPlayerReady }}));
+    players.push(new YT.Player('player2', { events: { 'onStateChange': onPlayerStateChange, 'onReady': onPlayerReady }}));
+    players.push(new YT.Player('player3', { events: { 'onStateChange': onPlayerStateChange, 'onReady': onPlayerReady }}));
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) plusSlides(1);
+}
+
+// Función llamada cuando el reproductor está listo
+function onPlayerReady(event) {
+    playerReadyCount++; // Incrementamos el contador de jugadores listos
+    if (playerReadyCount === players.length) { // Cuando todos los reproductores están listos
+        showSlides(slideIndex = 1); // Muestra la primera diapositiva
+    }
+}
+
+function showSlides(n) {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        players[i]?.pauseVideo();
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "block";
+    players[slideIndex-1]?.playVideo();
+    dots[slideIndex-1].className += " active";
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+</script>
+</body>
+</html>
+
