@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detalles.css">
+    <script src="detalles.js" defer></script>
+</head>
+<body>
+    <header id="top" >
+        <img src="imagenes/Aggiungi un titolo (2).png" style=" position: absolute; margin-top: 0px;  left: 23px; top: 0; height: 100px;" alt="">
+        <!-- <h1 style=" float: left;font-size: small;position: absolute; margin-top: 35px;top: 110px;">Valeria Flores Flamenco</h1> -->
+        
+        
+        
+        <ul class="menu">
+            <li><select onchange="translatePage(value)" name="" id="">
+                <option value="it">Italiano</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a data-key="contatto" href="index.html#contatto">Contacto</a></li>
+            <li><a data-key="spettacoli" href="espectaculos.html">Shows</a></li>
+            <li><a data-key="biografia" href="biografia.html">Biografia</a></li>
+            <li><a data-key="Clases"  href="clases.html">Clases o Cursos            </a></li>
+            <li><a data-key="Inicio" href="index.html">Inicio</a></li>
+            
+        </ul>
+        <nav>
+             <!-- <input type="checkbox" id="menu-toggle" hidden>
+             
+            <label for="menu-toggle" id="prueba" class="hamburger">&#9776;</label>
+             -->
+                
+        </nav>
+    </header>
+    <div class="product-details">
+        <h1 id="product-title">Producto</h1>
+        <p id="product-description">Descripción del producto.</p>
+        <p id="product-price">$0</p>
+        <img src="" id="img" alt="">
+    </div>
+        <div class="sizes" style="float: right;">
+            <label for="sizes">Talles:</label>
+            <div id="sizes">
+                
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                
+            </div>
+        </div>
+
+        <div class="quantity" >
+            <button onclick="decreaseQuantity()">-</button>
+            <input  id="quantity" value="1">
+            <button onclick="increaseQuantity()">+</button>
+        </div>
+
+        <button id="buy-button">AÑADIR AL CARRITO</button>
+
+        <p>Envíos gratis a productos con un precio mayor a $60,000</p>
+    
+
+    <div class="confirmation-message" id="confirmation-message" style="display:none;">
+        ¡Producto añadido al carrito!
+    </div>
+    <footer>
+        <p >&copy; 2024 Valeria Flores Flamenco. <span data-key="rights"> Tutti i diritti riservati.</span></p>
+        <!-- <a href="https://www.instagram.com/floresenflorencia" target="_blank">Instagram</a> -->
+    </footer>
+</body>
+</html>

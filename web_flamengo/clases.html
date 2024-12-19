@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="top" >
+        <img src="imagenes/Aggiungi un titolo (2).png" style=" position: absolute; margin-top: 0px;  left: 23px; top: 0; height: 100px;" alt="">
+        <!-- <h1 style=" float: left;font-size: small;position: absolute; margin-top: 35px;top: 110px;">Valeria Flores Flamenco</h1> -->
+        
+        
+        
+        <ul class="menu">
+            <li><select onchange="translatePage(value)" name="" id="">
+                <option value="it">Italiano</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select></li>
+            <li><a  href="shop.html">Shop</a></li>
+            <li><a data-key="contatto" href="index.html#contatto">Contacto</a></li>
+            <li><a data-key="spettacoli" href="espectaculos.html">Shows</a></li>
+            <li><a data-key="biografia" href="biografia.html">Biografia</a></li>
+            <li><a data-key="Clases"  href="clases.html">Clases o Cursos            </a></li>
+            <li><a data-key="Inicio" href="index.html">Inicio</a></li>
+            
+        </ul>
+        <nav>
+             <!-- <input type="checkbox" id="menu-toggle" hidden>
+             
+            <label for="menu-toggle" id="prueba" class="hamburger">&#9776;</label>
+             -->
+                
+        </nav>
+    </header>
+    <!-- Main Photo Section -->
+    <!-- <section class="main-photo">
+        <img src="carrousel.gif" alt="Main Photo">
+
+
+    </section> -->
+    
+
+
+    
+    <div class="grid-container" style="width: 100%;">
+        <div class="item1" style="text-align: left;">
+            
+                <h1 id="lezioni" data-key="lezioniTitle">Lezioni</h1>
+                <p data-key="lezioniText">Offro lezioni di flamenco per tutti i livelli, dai principianti agli avanzati.</p>
+                <img src="imagenes/clase_intermedios.jpg" class="imgClases" alt="Clases de Flamenco para Principiantes">
+                <div class="section">
+                    <h2 data-key="PrincipiantesTitulo">Principiantes</h2>
+                    <p data-key="Principiantes">¡Descubre el apasionante mundo del flamenco desde cero! Nuestras clases para principiantes están diseñadas para que, sin importar tu experiencia, puedas aprender los movimientos básicos, el ritmo y la pasión que caracteriza a este arte. Sumérgete en la esencia del flamenco, siente cada compás y déjate llevar por la música. ¡Atrévete a dar tus primeros pasos con nosotros!</p>
+                    <a  href="#contatto" > <button class="botones" >Reserva tu clase</button></a>
+        
+                  </div>
+        </div>
+    </div>
+
+    <div class="grid-container" style="width: 100%;">
+        <div class="item1" style="text-align: left;">
+            <img style="width: 300px; height: 500px;" src="imagenes/clase_principiantes.jpg" class="imgClases" alt="Clases de Flamenco para Principiantes">
+            
+            <div class="section">
+                <h2 data-key="IntermedioTitulo">Intermedios</h2>
+                <p data-key="Intermedio">¿Ya conoces los pasos básicos y quieres llevar tu baile al siguiente nivel? Las clases intermedias de flamenco están pensadas para quienes desean perfeccionar su técnica, aprender nuevas coreografías y adentrarse en los estilos más complejos del flamenco. Pulsa tu creatividad y estilo mientras refinas tu expresión y presencia escénica. ¡Es hora de desafiarte y seguir creciendo como bailaor o bailaora!</p>
+                <a  href="#contatto" > <button class="botones" >Reserva tu clase</button></a>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container" style="width: 100%;">
+        <div class="section">
+            <h2 data-key="AvanzadosTitulo">Avanzados</h2>
+            <img style="width: 300px; height:400px;" src="imagenes/clase_avanzado.jpg"  class="imgClases" alt="Clases de Flamenco Avanzados">
+            <p data-key="Avanzados">Para los verdaderos apasionados que viven y respiran flamenco. Nuestras clases avanzadas son un viaje intenso por la técnica, la precisión y la expresión más pura del baile flamenco. Diseñadas para bailarines experimentados, estas sesiones te ayudarán a perfeccionar tu arte, explorando nuevos estilos y secuencias coreográficas que te llevarán a la cúspide de tu potencial artístico. ¡Atrévete a vivir el flamenco en su máxima expresión!</p>
+            <a  href="#contatto" > <button class="botones" >Reserva tu clase</button></a>
+
+          </div>
+        
+    </div>
+    <div class="grid-container" style="width: 100%;">
+        <div class="section">
+            <h2 data-key="NiñosTitulo">Flamenco Kids (0-12 años)</h2>
+                    <img src="imagenes/clases_flamenco_kids.jpg"  class="imgClases" alt="Clases de Flamenco para Niñas">
+                    <p data-key="Niños">¡Que las más pequeñas también se dejen llevar por el encanto del flamenco! Las clases de flamenco para niñas están pensadas para que aprendan los movimientos básicos, el ritmo y la gracia del baile, mientras se divierten en un ambiente seguro y alegre. Fomentamos la expresión corporal, la coordinación y la confianza en sí mismas a través de la música y el baile. ¡Una experiencia que nunca olvidarán!</p>
+                    <a  href="#contatto" > <button class="botones" >Reserva tu clase</button></a>
+        
+          </div>
+        
+    </div>
+    <div class="grid-container" style="width: 100%;">
+        <div class="section">
+            <h2 data-key="SeniorTitulo">Flamenco Senior</h2>
+        <img style="width: 300px; height: 400px;" src="imagenes/clase_flamenco_senior.jpg" class="imgClases" alt="Clases de Flamenco para Adultos">
+        <p data-key="Senior">Redescubre la pasión, la fuerza y la elegancia del flamenco con nuestras clases diseñadas especialmente para adultos. Sin importar si es tu primera vez o si ya tienes experiencia, estas clases ofrecen un espacio para aprender, disfrutar y conectar con el ritmo y la energía del flamenco. No hay límite de edad para sentir la magia del flamenco. ¡Ven y demuestra tu pasión a cada paso!</p>
+        <a  href="#contatto" > <button class="botones" >Reserva tu clase</button></a>
+
+          </div>
+        
+        
+    </div>
+
+
+    <section class="contact" id="contatto">
+        <div class="contact-info-form">
+            <div class="contact-info">
+                <h2 data-key="contattoTitle">Contatto</h2>
+                <p>Valeria Flores</p>
+                <p data-key="address">Via Verdi 36, Empoli</p>
+                <p>Firenze, Italia</p>
+                <p>+39 3443607658</p>
+                <p>
+                    <img src="" alt="">
+                    <a href="https://www.instagram.com/floresenflorencia/" target="_blank">@valeriafloresflamenco</a>
+                
+                </p>
+            </div>
+            <div class="contact-form">
+                <h2 data-key="contattoTitle" >Contattami</h2>
+                <form  method="POST" onsubmit="alert('Mensaje enviado exitosamente')" action= "mailto:valeriafloresviaggi@gmail.com?subject=test"  enctype ="text/plain">
+                    <label data-key="name" for="name">Nome</label>
+                    <input type="text" id="name" name="name">
+                    <label data-key="email" for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label data-key="message" for="message">Messaggio</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button data-key="submit" type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-img">
+            <img src="imagenes/contatto.png" alt="Contact Image">
+        </div>
+    </section>
+
+    <div class="grid-container" style="width: 100%;">
+        
+    </div>
+    <!-- Info Sections -->
+    
+       
+    <!-- Footer -->
+    <footer>
+        <p >&copy; 2024 Valeria Flores Flamenco. <span data-key="rights"> Tutti i diritti riservati.</span></p>
+        <!-- <a href="https://www.instagram.com/floresenflorencia" target="_blank">Instagram</a> -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

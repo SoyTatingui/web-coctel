@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria Flores Flamenco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="top" >
+        <img src="imagenes/Aggiungi un titolo (2).png" style=" position: absolute; margin-top: 0px;  left: 23px; top: 0; height: 100px;" alt="">
+        <!-- <h1 style=" float: left;font-size: small;position: absolute; margin-top: 35px;top: 110px;">Valeria Flores Flamenco</h1> -->
+        
+        
+        
+       
+        <ul class="menu">
+            <li><select onchange="translatePage(value)" name="" id="">
+                <option value="it">Italiano</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select></li>
+            <li><a  href="shop.html">Shop</a></li>
+            <li><a data-key="contatto" href="index.html#contatto">Contacto</a></li>
+            <li><a data-key="spettacoli" href="espectaculos.html">Shows</a></li>
+            <li><a data-key="biografia" href="biografia.html">Biografia</a></li>
+            <li><a data-key="Clases"  href="clases.html">Clases o Cursos            </a></li>
+            <li><a data-key="Inicio" href="index.html">Inicio</a></li>
+            
+        </ul>
+        <nav>
+             <!-- <input type="checkbox" id="menu-toggle" hidden>
+             
+            <label for="menu-toggle" id="prueba" class="hamburger">&#9776;</label>
+             -->
+                
+        </nav>
+    </header>
+    <div class="grid-container" style="width: 100%;">
+        
+    </div>
+    <div  id="spettacoli">
+        <!-- <img src="imagenes/spettacoli.jpg" style="width: 433px;height: 553px;" alt="Spettacoli"> -->
+        <div >
+            <div  style="text-align: center;">
+            
+                <!-- <img src="imagenes/biografia.png" class="imgClases" alt="Biografia"> -->
+                <div class="section" >
+                    <h2 data-key="spettacoliTitle">Spettacoli</h2>
+                    <p data-key="spettacoliText">Los shows de Valeria Flores en Buenos Aires, Roma y Florencia son una experiencia única que fusiona la pasión del flamenco con la elegancia y el carácter de cada ciudad. Desde la intensidad de los tablaos porteños, donde el ritmo se siente en cada esquina, hasta la majestuosidad de los escenarios europeos, Valeria lleva su arte más allá de las fronteras, conectando culturas a través del baile. Con un estilo que combina fuerza y delicadeza, cada espectáculo es un viaje por los palos tradicionales del flamenco, enriquecido con su toque personal y vibrante. Una presentación de Valeria es mucho más que danza; es una celebración del arte y la emoción que solo el flamenco puede transmitir
+                    </p>
+                </div>
+                <img style="width: 200px;margin: 25px;"  src="imagenes/spettacoli.jpg" alt="">
+                <img style="width: 200px;margin: 25px;" src="imagenes/spettacoli1.jpg" alt="">
+                <img style="width: 200px;margin: 25px;" src="imagenes/spettacoli2.jpg" alt="">
+                <img style="width: 200px;margin: 25px; " src="imagenes/galleria1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="contact" id="contatto">
+        <div class="contact-info-form">
+            <div class="contact-info">
+                <h2 data-key="contattoTitle">Contatto</h2>
+                <p>Valeria Flores</p>
+                <p data-key="address">Via Verdi 36, Empoli</p>
+                <p>Firenze, Italia</p>
+                <p>+39 3443607658</p>
+                <p>
+                    <img src="" alt="">
+                    <a href="https://www.instagram.com/floresenflorencia/" target="_blank">@valeriafloresflamenco</a>
+                
+                </p>
+            </div>
+            <div class="contact-form">
+                <h2 data-key="contattoTitle" >Contattami</h2>
+                <form  method="POST" onsubmit="alert('Mensaje enviado exitosamente')" action= "mailto:valeriafloresviaggi@gmail.com?subject=test"  enctype ="text/plain">
+                    <label data-key="name" for="name">Nome</label>
+                    <input type="text" id="name" name="name">
+                    <label data-key="email" for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label data-key="message" for="message">Messaggio</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button data-key="submit" type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-img">
+            <img src="imagenes/contatto.png" alt="Contact Image">
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p >&copy; 2024 Valeria Flores Flamenco. <span data-key="rights"> Tutti i diritti riservati.</span></p>
+        <!-- <a href="https://www.instagram.com/floresenflorencia" target="_blank">Instagram</a> -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
